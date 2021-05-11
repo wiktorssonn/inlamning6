@@ -12,12 +12,12 @@ export default function Movies(props) {
     function deleteMovie(title) {
         props.setMovies(props.movies.filter((movie) => movie.title !== title));
     }
-    
+
     // Returnerar listan med filmerna
     return (
         <li className="list-group-item mt-2 rounded border-2">
             {props.movie.title}
-            <img src="images/delete.png" alt="delete" className="ms-3" onClick={() => {deleteMovie(props.movie.title)}} />
+            <img src="images/delete.png" alt="delete" id="delete" className="ms-3" onClick={() => {deleteMovie(props.movie.title)}} />
             {stars}
         </li>
     )

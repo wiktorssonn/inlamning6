@@ -1,6 +1,9 @@
+
 img {
     width: 25px;
     float: right;
 }
 
-
+#delete {
+  cursor: pointer;
+}
